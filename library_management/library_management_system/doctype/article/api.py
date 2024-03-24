@@ -1,7 +1,7 @@
 import frappe
 
 
-# Getting all data of article Doctype with ORM
+# Getting some data of article Doctype with ORM
 @frappe.whitelist(allow_guest=True)
 def get_all_articles_by_specific_fields_by_orm():
 	articles = frappe.get_all("Article", fields=["article_name", "auther", "status"])
