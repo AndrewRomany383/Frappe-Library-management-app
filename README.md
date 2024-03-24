@@ -4,12 +4,24 @@ Library Management System
 
 ### Installation
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+You can install this app using the [bench](https://github.com/AndrewRomany383/Frappe-Library-management-app) CLI:
 
 ```bash
 cd $PATH_TO_YOUR_BENCH
 bench get-app $URL_OF_THIS_REPO --branch LMSv1
 bench install-app library_management
+```
+
+### Testing the APIs
+```make get request for those four endpoints
+
+http://library.localhost:8000/api/method/library_management.library_management_system.doctype.article.api.get_all_articles_by_specific_fields_by_orm
+
+http://library.localhost:8000/api/method/library_management.library_management_system.doctype.article.api.get_all_articles_by_all_fields_by_orm
+
+http://library.localhost:8000/api/method/library_management.library_management_system.doctype.article.api.get_all_articles_by_specific_fields_by_sql
+
+http://library.localhost:8000/api/method/library_management.library_management_system.doctype.article.api.get_all_articles_by_all_fields_by_sql
 ```
 
 ### Contributing
